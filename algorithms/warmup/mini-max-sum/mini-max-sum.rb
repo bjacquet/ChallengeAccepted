@@ -3,7 +3,7 @@
 def min_i_max(numbers)
   maximum = minimum = numbers[0].to_i
   total_sum = numbers[0].to_i
-  for n in numbers[1..-1]
+  numbers[1..-1].each do |n|
     n_i = n.to_i
     total_sum += n_i
     maximum = [maximum, n_i].max
