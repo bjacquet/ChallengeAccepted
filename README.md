@@ -1,2 +1,6 @@
-# HackerRank
-To solve programming problems in different CS domains. https://www.hackerrank.com/
+# Challenge Accepted
+
+To solve programming problems in different CS domains:
+
+- Exercism http://exercism.io/
+- HackerRank https://www.hackerrank.com/
