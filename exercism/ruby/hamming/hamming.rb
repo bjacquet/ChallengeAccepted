@@ -10,19 +10,7 @@ class Hamming
     if strand1.length == 0
       return 0
     else
-      return self.computeAux(strand1, strand2)
-    end
-  end
-  
-  def self.computeAux(strand1, strand2)
-    if strand1 == ''
-      return 0
-    else
-      if strand1[0] == strand2[0]
-        return self.computeAux(strand1[1..-1], strand2[1..-1])
-      else
-        return 1 + self.computeAux(strand1[1..-1], strand2[1..-1])
-      end
+      return strand1.each_char.zip(strand2.each_char).select{ |a, b| a != b }.count
     end
   end
 end
