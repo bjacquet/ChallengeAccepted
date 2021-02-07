@@ -1,0 +1,17 @@
+# Game of Life in Ruby
+
+Game of Life implementation in Ruby.
+
+## How to run
+
+Install project dependencies.
+
+```shell
+bundle install
+```
+
+Run it!
+
+```shell
+ruby game-of-life.rb
+```
