@@ -1,9 +1,9 @@
 class Acronym
   def self.abbreviate(sentance)
     sentance
-      .split(/[\ \-]/)
+      .scan(/\w+/)
       .map { |w| w[0] }
-      .join()
+      .join
       .upcase
   end
 end
